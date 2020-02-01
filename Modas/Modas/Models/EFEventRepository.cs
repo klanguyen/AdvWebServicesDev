@@ -21,6 +21,13 @@ namespace Modas.Models
             return evt;
         }
 
+        public void DeleteEvent(int eventId)
+        {
+            Event evt = context.Events.FirstOrDefault(e => e.EventId == eventId);
+            context.Events.Remove(evt);
+            context.SaveChanges();
+        }
+
         public Event UpdateEvent(Event evt)
         {
             Event Event = context.Events.FirstOrDefault(e => e.EventId == evt.EventId);

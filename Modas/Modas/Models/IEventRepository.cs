@@ -13,5 +13,7 @@ namespace Modas.Models
         Event AddEvent(Event evt);
 
         Event UpdateEvent(Event evt);
+
+        void DeleteEvent(int eventId);
     }
 }
