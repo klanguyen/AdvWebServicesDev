@@ -40,9 +40,9 @@ $(function () {
     }
 
     function showPagingInfo(p) {
-        $('#start').html(p.rangeStart);
-        $('#end').html(p.rangeEnd);
-        $('#total').html(p.totalItems);
+        $('#start').html(p.eventRangeStart);
+        $('#end').html(p.eventRangeEnd);
+        $('#total').html(p.totalEvents);
         $('#first').data('page', 1);
         $('#next').data('page', p.nextPage);
         $('#prev').data('page', p.previousPage);
